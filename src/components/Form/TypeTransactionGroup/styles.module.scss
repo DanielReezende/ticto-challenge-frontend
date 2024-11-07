@@ -1,0 +1,59 @@
+@use "@/styles/colors" as theme;
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.item {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: theme.$white-900;
+  border: 1px solid theme.$gray-200;
+  color: theme.$gray-900;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out;
+
+  &[data-state="unchecked"]:hover {
+    background: theme.$gray-100;
+  }
+}
+
+.income {
+  svg {
+    color: theme.$green-900;
+  }
+
+  &[data-state="checked"] {
+    color: theme.$white-900;
+    background: theme.$green-500;
+    border: 1px solid theme.$green-500;
+
+    svg {
+      color: theme.$white-900;
+    }
+  }
+}
+
+.outcome {
+  svg {
+    color: theme.$red-900;
+  }
+
+  &[data-state="checked"] {
+    color: theme.$white-900;
+    background: theme.$red-500;
+    border: 1px solid theme.$red-500;
+
+    svg {
+      color: theme.$white-900;
+    }
+  }
+}

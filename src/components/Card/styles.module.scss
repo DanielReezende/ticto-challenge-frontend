@@ -1,0 +1,70 @@
+@use "@/styles/colors" as theme;
+
+.container {
+  width: 100%;
+
+  background-color: theme.$white-900;
+
+  border-radius: 0.5rem;
+
+  padding: 1.25rem;
+
+  display: flex;
+  flex-direction: column;
+
+  header {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-size: 1.5rem;
+      line-height: 160%;
+      color: theme.$gray-500;
+      text-transform: capitalize;
+    }
+
+    strong {
+      font-size: 2.25rem;
+      line-height: 160%;
+    }
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+
+    > div {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      color: theme.$gray-500;
+
+      > span {
+        font-size: 1.25rem;
+        line-height: 160%;
+        text-transform: capitalize;
+      }
+
+      svg {
+        color: theme.$gray-500;
+      }
+    }
+
+    > span {
+      font-size: 1.25rem;
+      line-height: 160%;
+      color: theme.$gray-500;
+    }
+  }
+}
+
+.income {
+  color: theme.$green-900;
+}
+
+.outcome {
+  color: theme.$red-900;
+}

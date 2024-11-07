@@ -1,0 +1,31 @@
+@use "@/styles/colors" as theme;
+
+.container {
+  background-color: theme.$purple-900;
+
+  > div {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.25rem 1rem 10rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 2.25rem;
+
+    > button {
+      max-width: 200px;
+
+      @media (max-width: 360px) {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
+.image-container {
+  width: 100%;
+  max-width: 186px;
+}

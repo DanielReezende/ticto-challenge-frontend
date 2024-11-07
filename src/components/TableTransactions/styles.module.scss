@@ -1,0 +1,50 @@
+@use "@/styles/colors" as theme;
+
+.table {
+  width: 100%;
+  border-spacing: 0 0.5rem;
+
+  th {
+    color: theme.$gray-500;
+    font-weight: 400;
+    padding: 1rem 0rem;
+    text-align: left;
+    line-height: 1.5rem;
+  }
+
+  td {
+    padding: 1.25rem;
+    border: 0;
+    background-color: theme.$white-900;
+    color: theme.$gray-900;
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+    font-size: 1.125rem;
+
+    &.income,
+    &.outcome {
+      font-weight: 700;
+    }
+
+    &.income {
+      color: theme.$green-900;
+    }
+
+    &.outcome {
+      color: theme.$red-900;
+    }
+
+    button {
+      border: 0;
+      background-color: transparent;
+
+      svg {
+        color: theme.$red-900;
+      }
+
+      &:hover {
+        filter: brightness(0.88);
+      }
+    }
+  }
+}

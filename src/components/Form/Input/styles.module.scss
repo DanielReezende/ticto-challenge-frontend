@@ -1,0 +1,24 @@
+@use "@/styles/colors" as theme;
+
+.container {
+  width: 100%;
+
+  input {
+    width: 100%;
+    background-color: theme.$white-700;
+    border: 1px solid theme.$gray-200;
+    border-radius: 6px;
+    color: theme.$gray-700;
+    padding: 1.25rem 1.75rem;
+
+    transition: all 0.5s ease-in-out;
+
+    &:focus {
+      border-color: theme.$gray-700;
+    }
+
+    &::placeholder {
+      color: theme.$gray-500;
+    }
+  }
+}

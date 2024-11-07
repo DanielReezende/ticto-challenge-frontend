@@ -1,0 +1,35 @@
+@use "@/styles/colors" as theme;
+
+.scroll-container {
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin-top: -5rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    overflow-x: auto;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.green {
+  color: theme.$green-900;
+}
+
+.red {
+  color: theme.$red-900;
+}

@@ -1,0 +1,17 @@
+@use "@/styles/colors" as theme;
+
+.container {
+  width: 100%;
+  background: theme.$purple-700;
+  color: theme.$gray-500;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+  text-align: center;
+
+  &:hover {
+    filter: brightness(0.85);
+  }
+}

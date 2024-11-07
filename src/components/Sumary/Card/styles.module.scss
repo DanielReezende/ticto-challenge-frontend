@@ -1,0 +1,57 @@
+@use "@/styles/colors" as theme;
+
+.container {
+  border-radius: 6px;
+  padding: 2rem;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      font-size: 1.5rem;
+    }
+  }
+
+  strong {
+    display: block;
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+}
+
+.primary {
+  background-color: theme.$white-900;
+
+  header {
+    color: theme.$gray-900;
+  }
+
+  strong {
+    color: theme.$gray-900;
+  }
+}
+
+.secondary {
+  background-color: theme.$green-900;
+
+  header {
+    color: theme.$white-900;
+  }
+
+  strong {
+    color: theme.$white-900;
+  }
+}
+.tertiary {
+  background-color: theme.$red-900;
+
+  header {
+    color: theme.$white-900;
+  }
+
+  strong {
+    color: theme.$white-900;
+  }
+}
