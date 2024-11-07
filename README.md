@@ -45,6 +45,8 @@ Com essa arquitetura, garantimos um projeto modular, escalável e eficiente, ali
 │   │
 │   ├── services # Todos os serviços externos da aplicação seja integração com api ou storage (No caso desta aplicação a configuração do localStorage)
 │   │
+│   ├── models # Todos types que representam as entities da aplicação
+│   │
 │   ├── styles # Todos os styles globais da aplicação
 
 ````
